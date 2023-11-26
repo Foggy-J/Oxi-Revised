@@ -1,0 +1,20 @@
+.status-ok {
+    border-radius: 100%;
+    background-color: #1ec276;
+    height: 25px;
+    width: 25px;
+}
+
+.status-failure {
+    border-radius: 100%;
+    background-color: #b80600;
+    height: 25px;
+    width: 25px;
+}
+
+.status-process {
+    border-radius: 100%;
+    background-color: #1ca3c4;
+    height: 25px;
+    width: 25px;
+}

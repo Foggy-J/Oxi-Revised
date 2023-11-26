@@ -1,0 +1,65 @@
+<%- include('../partials/header', {title : 'Home'}) %>
+<body>
+    <div class="container mt-2">
+        <h1><i class="bi bi-house-door-fill"></i> Home</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">IP Address</th>
+                <th scope="col">Model</th>
+                <th scope="col">Group</th>
+                <th scope="col">Status</th>
+                <th scope="col">Last Update</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Prod-SW-1</th>
+                <td>10.0.1.1</td>
+                <td>JunOS</td>
+                <td>Juniper</td>
+                <td><div class="status-ok"></div></td>
+                <td>10 mins ago</td>
+                <td>
+                    <i class="bi bi-cloud-arrow-down-fill"></i>&nbsp;
+                    <i class="bi bi-github"></i>&nbsp;
+                    <i class="bi bi-info-circle-fill"></i>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th scope="row">Prod-SW-2</th>
+                <td>10.0.1.2</td>
+                <td>JunOS</td>
+                <td>Juniper</td>
+                <td><div class="status-failure"></div></td>
+                <td>10 mins ago</td>
+                <td>
+                    <i class="bi bi-cloud-arrow-down-fill"></i>&nbsp;
+                    <i class="bi bi-github"></i>&nbsp;
+                    <i class="bi bi-info-circle-fill"></i>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th scope="row">Prod-SW-3</th>
+                <td>10.0.1.3</td>
+                <td>JunOS</td>
+                <td>Juniper</td>
+                <td><div class="status-process"></div></td>
+                <td>10 mins ago</td>
+                <td>
+                    <i class="bi bi-cloud-arrow-down-fill"></i>&nbsp;
+                    <i class="bi bi-github"></i>&nbsp;
+                    <i class="bi bi-info-circle-fill"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+<%- include('../partials/footer') %>
