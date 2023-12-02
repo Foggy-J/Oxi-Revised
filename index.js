@@ -5,6 +5,9 @@ const { serverPort } = require('./config/config.json');
 // Custom Console Library
 const conlog = require('./utils/console');
 
+// Remove Express Header on Responses
+app.disable('x-powered-by');
+
 // Set ejs as view engine for Express
 app.set('view engine', 'ejs');
 
@@ -23,6 +26,9 @@ app.get('/', (req, res) => {
 
 app.listen(serverPort, () => {
     conlog.welcome(
-        `Oxi-Revised started on port ${serverPort}!\nCreated by Foggy -> https://github.com/Foggy-J/Oxi-Revised\n`
-        );
+        `Oxi-Revised started on port ${serverPort}!`
+    );
+    conlog.welcome(
+        `Created by Foggy -> https://github.com/Foggy-J/Oxi-Revised\n`
+    );
 });

@@ -1,5 +1,9 @@
 {
-    "serverPort" : 80,
-    "interval"   : 60,
-    "githubRepo" : ""
+    "serverPort"            : 80,
+    "interval"              : 60,
+    "gitSyncEnable"         : true,
+    "gitRepo"               : "",
+    "gitUser"               : "",
+    "gitEmail"              : "",
+    "gitPrivateKeyLocation" : ""
 }
